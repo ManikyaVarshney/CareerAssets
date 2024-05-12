@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
-    <!-- Link to Roboto font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
     <style>
         body {
-            font-family: 'Roboto', sans-serif; /* Use Roboto font */
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            color: #333; /* Set text color */
+            color: #333;
             background-color: #f5f5f5;
         }
         a {
-            text-decoration: none; /* Remove underline from links */
-            color: #007bff; /* Set link color */
+            text-decoration: none;
+            color: #007bff;
         }
         .container {
             max-width: 800px;
@@ -25,8 +24,8 @@
             border: 2px solid #000;
             border-radius: 10px;
             background-color: #fff;
-            display: flex; /* Use flexbox layout */
-            flex-direction: column; /* Layout sections vertically */
+            display: flex;
+            flex-direction: column;
         }
         .header, .footer {
             text-align: center;
@@ -39,27 +38,18 @@
             padding: 20px 0;
         }
         .left-section, .right-section {
-            flex: 25%; /* Left section takes 25% width, right section takes the remaining space */
-            border-right: 2px solid #ccc; /* Add border between sections */
-            padding: 0 20px; /* Add padding inside sections */
-            box-sizing: border-box; /* Ensure padding is included in width calculation */
+            flex: 1;
+            padding: 0 20px;
+            box-sizing: border-box;
         }
         .right-section {
-            flex: 75%; /* Right section takes 75% width */
-            border-right: none; /* Remove right border for right section */
-        }
-        h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
+            flex: 75%;
+            border-left: 2px solid #ccc;
         }
         h2 {
             font-size: 24px;
             color: #007bff;
             margin-bottom: 15px;
-        }
-        p, ul {
-            font-size: 18px;
-            line-height: 1.6;
         }
         ul {
             list-style-type: none;
@@ -82,23 +72,22 @@
             display: flex;
             justify-content: space-between;
         }
+        .footer{
+            font-size: 20px;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
         h3 {
-            font-size: 20px; /* Increase font size for Portfolio heading */
-            font-weight: bold; /* Make the heading bold */
+            font-size: 20px;
+            font-weight: bold;
             color: rgb(95, 29, 237);
         }
-
-        h4{
-            
-            font-size: 18px; /* Increase font size for Portfolio heading */
-            font-weight: bold; /* Make the heading bold */
+        h4 {
+            font-size: 18px;
+            font-weight: bold;
         }
-
-       h3+p, h4 + p {
-            line-height: 1; /* Remove top margin for <p> elements immediately after <h4> */
-        }
-        
-
     </style>
 </head>
 <body>
@@ -108,7 +97,6 @@
             <p>Aim: Dedicated to absorbing and sharing spiritual and secular wisdom, fostering global unity and growth to safeguard our future.</p>
         </div>
         <div class="main">
-            <!-- Left Section -->
             <div class="left-section">
                 <h2>Coding Profiles</h2>
                 <ul>
@@ -122,76 +110,54 @@
                 <ul>
                     <li>C++ with DSA</li>
                     <li>HTML/CSS</li>
-                    <li>Microsoft Excel or GoogleSpreadsheet</li>
+                    <li>Microsoft Excel/Google Sheets</li>
                     <li>Microsoft Word</li>
                     <li>SQL</li>
-                    <li>Cyber Security and Ethical Hacking</li>
+                    <li>Cyber Security</li>
                     <li>Digital Marketing</li>
                     <li>Blogging</li>
                     <li>Communication</li>
                 </ul>
-               <hr>
+                <hr>
                 <h2>Certifications</h2>
                 <ul>
                     <li><a href="https://drive.google.com/file/d/1uvaKHrezNQvbFHGh-Yuw8uV-T30ocomj/view?usp=drive_link">DSA</a></li>
                     <li><a href="https://drive.google.com/file/d/1wKyKbaWlM07WTK-MjzbUiAo5iq7-hIHD/view?usp=drive_link">CyberSecurity</a></li>
                     <li><a href="https://drive.google.com/file/d/1eqZNV6QUXgLgsCKXQ-JAZrnuEq6Bgvxa/view?usp=drive_link">HTML/CSS</a></li>
-                    <li><a href="https://drive.google.com/drive/folders/1ecbYFBg2sy94627vNWCu2EVUDD573rVN?usp=sharing">more...</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1ecbYFBg2sy94627vNWCu2EVUDD573rVN?usp=sharing">More...</a></li>
                 </ul>
             </div>
-            <!-- Right Section -->
             <div class="right-section">
                 <h2>Education</h2>
                 <div class="education">
-                    <p>
-                        <span>G.L. Bajaj Institute of Technology And Management</span>
-                        <span>Greater Noida, U.P.</span>
-                    </p>
-                    <p>
-                        <span>Bachelor of Technology in Computer Science and Engineering</span>
-                        <span>Nov 2021 - Current</span>
-                    </p>
+                    <p><span>G.L. Bajaj Institute of Technology And Management</span><span>Greater Noida, U.P.</span></p>
+                    <p><span>Bachelor of Technology in Computer Science and Engineering</span><span>Nov 2021 - Current</span></p>
                 </div>
                 <hr>
                 <h2>Projects</h2>
-                <!-- Add your projects here -->
                 <div class="Portfolio">
                     <h3>Portfolio</h3>
-                    <p>Description: Developed a personal portfolio website to showcase projects, skills, and resume.</p>
-                    <p>Your Role: Designed the layout and visual elements of the website, including navigation, sections, and styling.</p>
+                    <p>Description: Developed a personal portfolio website.</p>
+                    <p>Role: Designed layout and visual elements.</p>
                     <p>Status: In Progress</p>
                     <p>Technologies Used: HTML, CSS, JavaScript</p>
-                    <p>Link to Portfolio: <a href="https://manikyavarshney.github.io/CareerAssets/Portfolio_Manikya/">Portfolio Website</a></p>
+                    <p>Link: <a href="https://manikyavarshney.github.io/CareerAssets/Portfolio_Manikya/">Portfolio Website</a></p>
                 </div>
-
-                <hr>
-                <h2>Accomplishments</h2>
-                <!-- Add your accomplishments here -->
                 <hr>
                 <h2>Experience</h2>
-                <!-- Add your experience here -->
                 <div class="Internship">
                     <h3>Internship</h3>
                     <div class="Rinex">
                         <h4>Rinex</h4>
                         <p>Type: Virtual / Remote</p>
-                         <p></p>Duration: May 2023 - June 2023</p>
-                        <p>Description: Completed a virtual internship at Rinex, specializing in cyber security. Engaged in hands-on projects, enhancing practical skills. <a href="https://drive.google.com/file/d/1NAe9BKU7j8Gzt9axUEezUhJxEf_uA5hr/view?usp=sharing">View Certificate</a></p>
+                        <p>Duration: May 2023 - June 2023</p>
+                        <p>Description: Completed virtual internship in cyber security. <a href="https://drive.google.com/file/d/1NAe9BKU7j8Gzt9axUEezUhJxEf_uA5hr/view?usp=sharing">View Certificate</a></p>
                     </div>
                 </div>
-                
-                
-                
             </div>
         </div>
         <div class="footer">
-            <p>Contact: 
-                <a href="mailto:manasmanikya@gmail.com">Send email</a> || 
-                <a href="tel:+919058170130">Call</a> || 
-                <a href="https://www.linkedin.com/in/manikyavarshney">Linkedin</a> ||
-                <a href="https://github.com/ManikyaVarshney">Github</a>||
-                <a href="https://www.depthknowledge.in">Blog </a>
-            </p>
+            <p>Contact: <a href="mailto:manasmanikya@gmail.com">Email</a> | <a href="tel:+919058170130">Call</a> | <a href="https://www.linkedin.com/in/manikyavarshney">LinkedIn</a> | <a href="https://github.com/ManikyaVarshney">GitHub</a> | <a href="https://www.depthknowledge.in">Blog</a></p>
         </div>
     </div>
 </body>
