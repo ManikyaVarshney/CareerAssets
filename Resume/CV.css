@@ -36,7 +36,7 @@
             box-sizing: border-box;
         }
         .right-section {
-            flex: 75%;
+            flex: 70%;
             border-left: 2px solid #ccc;
         }
         h2 {
@@ -85,9 +85,8 @@
             font-weight: bold;
             margin: 5px 0; /* Adjust margin for consistency */
         }
-        h3 + p,
-        h4 + p {
-            margin-top: 0%; /* Adjust spacing after h3 and h4 */
-            display: flex;
-            justify-content: space-between;
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-top: 5px;
         }
