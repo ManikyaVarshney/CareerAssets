@@ -1,17 +1,16 @@
-/* Base styles */
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
     background-color: #f5f5f5;
+    
 }
-
 a {
     text-decoration: none;
     color: #007bff;
 }
-
 .container {
     max-width: 800px;
     margin: 20px auto;
@@ -22,44 +21,35 @@ a {
     display: flex;
     flex-direction: column;
 }
-
-.header {
+.header{
     text-align: center;
     background-color: #ddd;
     padding: 20px 0;
 }
-
 .main {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap */
     justify-content: space-between;
     padding: 20px 0;
 }
-
 .left-section, .right-section {
     flex: 1;
     padding: 0 20px;
     box-sizing: border-box;
 }
-
 .right-section {
-    flex: 1; /* Adjust flex basis for responsiveness */
+    flex: 80%;
     border-left: 2px solid #ccc;
-    padding-left: 20px; /* Add some left padding for content separation */
 }
-
 h2 {
     font-size: 24px;
     color: #007bff;
     margin-bottom: 15px;
 }
-
 ul {
     list-style-type: none;
     padding-left: 0;
     margin: 0;
 }
-
 hr {
     border: none;
     border-top: 1px solid #ccc;
@@ -72,44 +62,18 @@ hr {
     justify-content: space-between;
     line-height: 1.2; /* Adjust line height for education section */
 }
-
 h1 {
     font-size: 36px;
     margin-bottom: 10px;
 }
-
 h3 {
     font-size: 20px;
     font-weight: bold;
     color: rgb(95, 29, 237);
     margin: 5px 0; /* Adjust margin for consistency */
 }
-
 ul {
     list-style-type: disc;
     padding-left: 20px;
     margin-top: 5px;
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column; /* Stack sections vertically */
-    }
-
-    .left-section, .right-section {
-        flex: auto; /* Allow sections to expand */
-        width: 100%; /* Full width on smaller screens */
-        border-left: none; /* Remove border between sections */
-        padding: 0 20px; /* Maintain padding */
-        margin-bottom: 20px; /* Add spacing between sections */
-    }
-
-    .left-section {
-        order: 1; /* Change order to display left section below */
-    }
-
-    .right-section {
-        order: 2; /* Change order to display right section above */
-    }
 }
