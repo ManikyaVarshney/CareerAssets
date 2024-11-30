@@ -41,7 +41,7 @@ a {
     border-left: 2px solid #ccc;
 }
 h2 {
-    font-size: 24px;
+    font-size: 18px;
     color: #007bff;
     margin-bottom: 15px;
 }
@@ -63,11 +63,11 @@ hr {
     line-height: 1.2; /* Adjust line height for education section */
 }
 h1 {
-    font-size: 36px;
+    font-size: 21px;
     margin-bottom: 10px;
 }
 h3 {
-    font-size: 20px;
+    font-size: 14px;
     font-weight: bold;
     color: rgb(95, 29, 237);
     margin: 5px 0; /* Adjust margin for consistency */
