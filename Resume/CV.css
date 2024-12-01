@@ -43,7 +43,7 @@ a {
 }
 
 h1 {
-    font-size: 21px;
+    font-size: 32px;
     margin-bottom: 10px;
 }
 
@@ -60,7 +60,7 @@ h3 {
     margin: 5px 0;
 }
 
-p, ul, li {
+p, ul, li, .object {
     font-size: 12px;
 }
 
@@ -90,6 +90,7 @@ hr {
     		flex: 1 1 25%; /* Equal-width items, adjust 20% for different widths */
     		text-align: center; /* Center the text in each item */
     		margin: 10px 0; /* Add vertical spacing */
+            
 }
 /* Optional: Reset box-sizing for all elements */
 * {
