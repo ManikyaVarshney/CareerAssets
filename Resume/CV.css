@@ -1,16 +1,16 @@
-
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
     background-color: #f5f5f5;
-    
 }
+
 a {
     text-decoration: none;
-    color: #007bff;
+    color: #007bff; /* Consider using a more accessible color */
 }
+
 .container {
     max-width: 800px;
     margin: 20px auto;
@@ -18,38 +18,58 @@ a {
     border: 2px solid #000;
     border-radius: 10px;
     background-color: #fff;
-    display: flex;
-    flex-direction: column;
 }
-.header{
+
+.header {
     text-align: center;
     background-color: #ddd;
     padding: 20px 0;
 }
+
 .main {
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
 }
+
 .left-section, .right-section {
-    flex: 1;
+    flex: 1; /* Default flex-grow and flex-shrink */
     padding: 0 20px;
-    box-sizing: border-box;
 }
+
 .right-section {
-    flex: 80%;
+    width: 80%; /* Replace flex: 80% */
     border-left: 2px solid #ccc;
 }
+
+h1 {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
 h2 {
     font-size: 18px;
     color: #007bff;
     margin-bottom: 15px;
 }
-ul {
-    list-style-type: none;
-    padding-left: 0;
-    margin: 0;
+
+h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(95, 29, 237);
+    margin: 5px 0;
 }
+
+p, ul, li {
+    font-size: 12px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
 hr {
     border: none;
     border-top: 1px solid #ccc;
@@ -60,22 +80,10 @@ hr {
     margin: 5px 0;
     display: flex;
     justify-content: space-between;
-    line-height: 1.2; /* Adjust line height for education section */
+    line-height: 1.5; /* Adjusted for readability */
 }
-h1 {
-    font-size: 21px;
-    margin-bottom: 10px;
+
+/* Optional: Reset box-sizing for all elements */
+* {
+    box-sizing: border-box;
 }
-h3 {
-    font-size: 16px;
-    font-weight: bold;
-    color: rgb(95, 29, 237);
-    margin: 5px 0; /* Adjust margin for consistency */
-}
-ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    margin-top: 5px;
-}
-p, ul, li{
-    font-size: 12px;}
