@@ -88,7 +88,7 @@ hr {
     		flex-wrap: wrap; /* Allows wrapping to the next line */
     		justify-content: space-between; /* Equal spacing between items */
     		flex: 1 1 25%; /* Equal-width items, adjust 20% for different widths */
-    		text-align: center; /* Center the text in each item */
+    		text-align: Left; /* Center the text in each item */
     		margin: 10px 0; /* Add vertical spacing */
             
 }
