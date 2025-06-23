@@ -265,8 +265,24 @@ body.dark-mode footer a {
     color: white;
 }
 @media print {
-  a[href] {
-    color: #1155cc !important;
-    text-decoration: underline !important;
+  body {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    margin: 0;
+    padding: 0;
+  }
+
+  @page {
+    size: A4;
+    margin: 1cm;
+  }
+
+  a {
+    color: #0645ad;
+    text-decoration: underline;
+  }
+
+  .no-print {
+    display: none; /* Hide buttons or navbar in PDF */
   }
 }
