@@ -1,0 +1,266 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: white;
+    color: black;
+    font-size: 12px;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background: black;
+    color: white;
+}
+
+
+/* Headings */
+h1, h2, h3 {
+    font-family: Arial, sans-serif;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 24px; /* Main heading size */
+    text-align: center;
+}
+
+h2 {
+    font-size: 18px; /* Section heading size */
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+body.dark-mode h2 {
+    border-bottom: 2px solid white;
+}
+
+h3 {
+    font-size: 16px; /* Subheading size */
+    margin-bottom: 5px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    max-height: fit-content;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    color: black;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+
+body.dark-mode header {
+    background: #222;
+    color: white;
+    border: 2px solid white;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+body.dark-mode header a {
+    color: white;
+}
+
+.header-left, .header-right {
+    flex: .8;
+    display: flex;
+    justify-content: center;
+}
+
+.header-center {
+    flex: 2;
+    text-align: center;
+}
+
+header button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background: white;
+    color: black;
+    font-size: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body.dark-mode header button {
+    background: #444;
+    color: white;
+}
+
+header button:hover {
+    background: gray;
+    color: white;
+}
+
+/* Main Content */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+
+/* Dark Mode Main */
+body.dark-mode main {
+    background: #222;
+    box-shadow: none;
+    border: 2px solid white;
+}
+
+/* Sections */
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 2px solid black;
+}
+
+h2 {
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/* Dark Mode Headings */
+body.dark-mode h2 {
+    border-bottom: 2px solid white;
+}
+
+/* Coding Profiles */
+.coding-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.coding-list ul {
+    list-style-type: square;
+    padding-left: 20px;
+    width: 48%;
+}
+
+/* Education Section */
+#education {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.education-row {
+    display: flex;
+    justify-content: space-between;
+    font-weight: normal;
+}
+
+.education-row span {
+    width: 48%;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.education-row span:last-child {
+    text-align: right;
+}
+
+.education-details {
+    display: flex;
+    justify-content: space-between;
+    font-weight: normal;
+}
+
+.education-details span {
+    width: 48%;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.education-details span:last-child {
+    text-align: right;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: #ffffff;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #007bff;
+    color: #ffffff;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+/* Dark Mode Table */
+body.dark-mode table {
+    background: #333; /* Dark background for the table */
+    color: white; /* White text for better contrast */
+    border: 1px solid #555; /* Darker border for the table */
+}
+
+body.dark-mode th {
+    background-color: #444; /* Darker header background */
+    color: #ffffff; /* White text for headers */
+}
+
+body.dark-mode td {
+    border: 1px solid #555; /* Darker border for table cells */
+}
+
+body.dark-mode tr:nth-child(even) {
+    background-color: #444; /* Slightly lighter background for even rows */
+}
+
+/* Footer */
+footer {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+    background: white;
+    color: black;
+    border-radius: 8px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+body.dark-mode footer {
+    background: #222;
+    color: white;
+    border: 2px solid white;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+body.dark-mode footer a {
+    color: white;
+}
